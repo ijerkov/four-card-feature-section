@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Four card feature section</title>
+
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+<main>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+    <article class="stack gap-10">
+        <div class="stack align-center text-center gap-4">
+            <h2 class="text-preset-2">Reliable, efficient delivery
+                <strong class="text-preset-1 block">Powered by Technology</strong></h2>
+            <p class="text-preset-4 text-width">
+                Our Artificial Intelligence powered tools use millions of project data points
+                to ensure that your project is successful
+            </p>
+        </div>
 
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+        <ul class="cards my-grid gap-8 self-center">
+            <li class="card | self-center justify-self-center border-cyan">
+                <div class="card_content stack">
+                    <h3 class="text-preset-3">Supervisor</h3>
+                    <p class="text-preset-5">Monitors activity to identify project roadblocks</p>
+                    <img height="64" width="64" src="./images/icon-supervisor.svg"/>
+                </div>
+            </li>
+            <li class="card justify-self-center border-red">
+                <div class="card_content stack">
+                    <h3 class="text-preset-3">Team Builder</h3>
+                    <p class="text-preset-5">Scans our talent network to create the optimal team for your project</p>
+                    <img height="64" width="64" src="./images/icon-team-builder.svg"/>
+                </div>
+            </li>
+            <li class="card justify-self-center border-orange">
+                <div class="card_content stack">
+                    <h3 class="text-preset-3">Karma</h3>
+                    <p class="text-preset-5">Regularly evaluates our talent to ensure quality</p>
+                    <img height="64" width="64" src="./images/icon-karma.svg"/>
+                </div>
+            </li>
+            <li class="card | self-center justify-self-center border-blue">
+                <div class="card_content stack">
+                    <h3 class="text-preset-3">Calculator</h3>
+                    <p class="text-preset-5">Uses data from past projects to provide better delivery estimates</p>
+                    <img height="64" width="64" src="./images/icon-calculator.svg"/>
+                </div>
+            </li>
+        </ul>
+    </article>
+</main>
 </body>
 </html>

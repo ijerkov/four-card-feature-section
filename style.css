@@ -1,0 +1,218 @@
+
+:root {
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --blue: hsl(212, 86%, 64%);
+    --orange: hsl(34, 97%, 64%);
+
+    --spacing-10: 2.5rem; /* 40px */
+    --spacing-8: 2rem; /* 32px */
+    --spacing-6: 1.5rem; /* 24px */
+    --spacing-4: 1rem; /* 16px */
+    --spacing-2: 0.5rem; /* 8px */
+
+}
+
+html {
+    color: var(--grey-500);
+}
+
+main {
+    padding: var(--spacing-8);
+
+}
+
+
+.stack {
+    /* ↓ The flex context */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-width {
+    max-width: 55ch;
+}
+
+/*
+    Util classes
+*/
+
+.block {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.gap-4 {
+    gap: var(--spacing-4);
+}
+
+.gap-8 {
+    gap: var(--spacing-8);
+}
+
+.gap-10 {
+    gap: var(--spacing-10);
+}
+
+.self-center {
+    align-self: center;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-preset-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: clamp(1.5rem, 1.2359rem + 1.1268vw, 2.25rem);
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200; /* Extra Light */
+    font-size: clamp(1.5rem, 1.2359rem + 1.1268vw, 2.25rem);
+    line-height: 140%;
+    letter-spacing: 0.25px;
+}
+
+.text-preset-3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 1.25rem; /* 20px */
+    line-height: 135%;
+    letter-spacing: 0px;
+}
+
+.text-preset-4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 0.9375rem; /* 15px */
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+.text-preset-5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 0.8125rem; /* 13px */
+    line-height: 160%;
+    letter-spacing: 0px;
+}
+
+.border-cyan {
+    border-top-color: var(--cyan);
+}
+
+.border-red {
+    border-top-color: var(--red);
+}
+
+.border-blue {
+    border-top-color: var(--blue);
+}
+
+.border-orange {
+    border-top-color: var(--orange);
+}
+
+.card {
+    padding: var(--spacing-8);
+    border-radius: 0.5rem;
+    border-top-width: 0.25rem;
+    border-top-style: solid;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+
+.card img {
+    margin-left: auto;
+}
+
+
+.card h3 {
+    margin-bottom: 6px;
+}
+
+.card p {
+    margin-bottom: var(--spacing-8);
+}
+
+.card_content {
+    text-align: left;
+}
+
+.card_content p {
+    max-width: 30ch;
+}
+
+
+.my-grid {
+    display: grid;
+    max-width: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "item-1"
+        "item-2"
+        "item-3"
+        "item-4";
+}
+
+@media (min-width: 660px) {
+    .my-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "item-1 item-1"
+        "item-2 item-3"
+        "item-4 item-4";
+    }
+}
+
+
+@media (min-width: 48rem) {
+    .my-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "item-1 item-2 item-4"
+        "item-1 item-3 item-4";
+    }
+}
+
+.my-grid > :nth-child(1) {
+    grid-area: item-1;
+}
+
+.my-grid > :nth-child(2) {
+    grid-area: item-2;
+}
+
+.my-grid > :nth-child(3) {
+    grid-area: item-3;
+}
+
+.my-grid > :nth-child(4) {
+    grid-area: item-4;
+}
+
+ul[class] {
+    padding: 0;
+    margin: 0;
+}
+
+ul[class] li {
+    list-style: none;
+}
+
